@@ -1,0 +1,27 @@
+.detalle-producto {
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .detalle-producto-imagen {
+    width: 300px; /* Ancho específico */
+    height: 200px; /* Altura específica */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+}
+  
+  .detalle-producto-contenido {
+    text-align: center;
+    padding: 16px;
+  }
+  
+  .detalle-producto-precio {
+    margin: 12px 0;
+    font-weight: bold;
+  }
+  
+  .detalle-producto-boton {
+    margin-top: 8px;
+  }
+  
