@@ -71,11 +71,16 @@ const ProductDetail = () => {
                 alt={producto.titulo}
                 sx={{ objectFit: "contain" }}
             />
-            <CardContent>
+             <CardContent>
                 <Typography variant="h4" gutterBottom>{producto.titulo}</Typography>
                 <Typography variant="body1" color="text.secondary">{producto.descripcion}</Typography>
                 <Typography variant="h5" color="primary" sx={{ mt: 2 }}>${producto.precio}</Typography>
                 <Typography variant="body2" color="text.secondary">Stock disponible: {stockDisponible}</Typography>
+
+                {/* Aquí agregamos la categoría */}
+                <Typography variant="body2" color="text.secondary" sx={{ mt: 2 }}>
+                    Categoría: {producto.categoria}
+                </Typography>
 
                 <Box sx={{ display: "flex", alignItems: "center", gap: 2, mt: 3 }}>
                     <Button variant="contained" color="secondary" onClick={disminuirCantidad} disabled={cantidad === 1}>-</Button>
