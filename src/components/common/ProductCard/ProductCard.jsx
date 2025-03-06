@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-import './productCard.css';
+import './ProductCard.css';
 import { Link } from "react-router-dom";
 
 export const ProductCard = (props) => {
